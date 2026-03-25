@@ -1,0 +1,44 @@
+.black {
+    width: 300px;
+    padding-Bottom: 100px;
+    background: black;
+    margin-Left: 50px;
+    color: black;
+}
+
+.red{
+    width: 300px;
+    padding-Bottom: 100px;
+    background: red;
+    margin-Left: 50px;
+    color: white;
+}
+
+p{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.blue{
+    width: 300px;
+    padding-Bottom: 100px;
+    background: blue;
+    margin-Left: 50px;
+    color: white;
+}
+
+.green{
+    width: 300px;
+    padding-Bottom: 100px;
+    background: green;
+    margin-Left: 50px;
+    color: white;
+}
+
+.yellow{
+    width: 300px;
+    padding-Bottom: 100px;
+    background: yellow;
+    margin-Left: 50px;
+    color: black;
+}
