@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
+import MyForm from './MyFrom';
+
 
 function App() {
   // {할일: 할일, 마감일: date, 작업: 삭제버튼}
@@ -40,11 +42,13 @@ function App() {
         * 숙제 3. 장르, 제목, 출시일, 플랫폼을 받아 테이블로 만들기 비고칸 만들어 삭제버튼까지 만들기
         */}
 
-      <Table list={list} del={(index)=>{del(index)}} />
+      {/* <Table list={list} del={(index)=>{del(index)}} /> */}
+      <MyForm list={list} del={del} />
     </div>
   );
 }//app
 
+// 아래 함수를 다른 파일로 만들어 분리
 function Table(props){
   return(
     <table border='1'>

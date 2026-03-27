@@ -1,0 +1,47 @@
+.App{
+    width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+
+}
+
+.app-header{
+    margin: 0 0 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav{
+    display: flex;
+    /* 브라우저 크기를 넘어가면 다음줄로 넘김 */
+    flex-wrap: wrap;
+    /* 태그사이의 간격을 조정 */
+    gap: 8px 16px;
+}
+
+.nav > a{
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:active{
+    text-decoration: underline;
+}
+
+.nav a:active{
+    font-weight: bold;
+}
+
+.app-main{
+    margin-top: 24px;
+    padding: 20px;
+    border:1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.app-main h2{
+    margin-top: 0;
+    font-size: 18px;
+}

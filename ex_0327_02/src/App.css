@@ -1,0 +1,18 @@
+.movie{
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.movie .movie-title{
+  /* 다른애가 쓸 자리 뺴고 다른자리 다 쓰는 스타일 */
+  flex-grow: 1;
+}
+
+.movie .movie-year{
+  font-size: 20px;
+  color: red;
+}

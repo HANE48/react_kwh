@@ -65,7 +65,7 @@ function Table(props) {
               <td>{list.janr}</td>
               <td>{list.title}</td>
               <td>{list.release}</td>
-              <td>{list.platform}</td>
+              <td style={{textAlign:'center'}}>{list.platform}</td>
               <td><input type='button' value='삭제' onClick={() => { props.del(index) }} /></td>
             </tr>
           ))
