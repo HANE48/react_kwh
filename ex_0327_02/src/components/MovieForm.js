@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { useState } from 'react';
+import InputField from './InputField.js'
 
 const MovieForm = (props) => {
     console.log(props.titleError);
@@ -8,10 +9,16 @@ const MovieForm = (props) => {
 
     return (
         <form onSubmit={props.add}>
-            <input value={props.movieTitle} onChange={(e) => { props.setTitle(e.target.value) }} placeholder='영화 제목' /><br />
-            <div style={{color:'red'}}>{props.titleError}</div>
-            <input type='number' value={props.movieYear} onChange={(e) => { props.setYear(e.target.value) }} placeholder='개봉 연도' />
-            <div style={{color:'red'}}>{props.yearError}</div>
+            <InputField value={props.movieTitle}
+                onChange={(e) => { props.setTitle(e.target.value) }}
+                errorMessage={props.titleError}
+                placeholder='영화 제목' 
+                type='text'/>
+            <InputField value={props.movieYear}
+                onChange={(e) => { props.setYear(e.target.value) }}
+                errorMessage={props.yearError}
+                placeholder='개봉 연도'
+                type='number'/>
             <button type='submit'>영화 추가</button>
         </form>
     );
